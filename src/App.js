@@ -11,6 +11,7 @@ function App() {
       overflow="hidden"
       maxW="2000 px"
     >
+      {/* navbar */}
       <Navbar/>
       {/* Column 2 */}
       <Flex>
