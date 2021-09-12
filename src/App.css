@@ -27,3 +27,8 @@ body {
 .font {
   font-family: 'Montserrat', sans-serif;
 }
+
+.vertical-line {
+  border-right: 1.5px solid black;
+  height: 100%;
+}
