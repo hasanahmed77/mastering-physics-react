@@ -1,22 +1,34 @@
-import { Flex, Text, Button, Image } from '@chakra-ui/react';
+import { Flex, Container } from '@chakra-ui/react';
 import './App.css';
-import Home from './components/Home';
+import Home from './components/home-components/Home';
 import Navbar from './components/Navbar';
-import MainImage from './images/sleep.jpg';
+import GetStarted from './components/GetStarted';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 function App() {
   return (
-    <Flex
-      h="100vh"
-      flexDir="column"
-      overflow="hidden"
-      maxW="2000 px"
-      pl="10%"
-      pr="10%"
-    >
-      <Navbar/>
-      <Home/>
-    </Flex>
+    <Router>
+      <Flex
+        h="100vh"
+        flexDir="column"
+        overflow="hidden"
+        maxW="2000 px"
+        pl="10%"
+        pr="10%"
+      >
+        <Navbar/>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+
+          <Route exact path="/GetStarted">
+            <GetStarted />
+          </Route>
+        </Switch>
+
+      </Flex>
+    </Router>
   );
 }
 

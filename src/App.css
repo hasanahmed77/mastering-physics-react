@@ -29,6 +29,6 @@ body {
 }
 
 .vertical-line {
-  border-right: 1.5px solid black;
+  border-right: 1.5px solid black !important;
   height: 100%;
 }

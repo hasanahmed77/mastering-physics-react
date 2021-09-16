@@ -2,6 +2,7 @@ import React from 'react'
 import { Flex, Image, Link, Text, Button } from '@chakra-ui/react';
 import Logo from '../images/logo.svg'
 import '../App.css'
+import { Link as ReachLink } from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -10,6 +11,8 @@ const Navbar = () => {
         flexDir="column"
         height="10%"
         className="font-medium"
+        mb="3.5rem"
+        mt="1rem"
       >
         <Flex
           flexDir="row"
@@ -20,7 +23,7 @@ const Navbar = () => {
           justifyContent="space-between"
             as="nav"
           >
-          <Link>
+          <Link as={ReachLink} to="/">
           <Image src={Logo}
             alt="PHYSICS" 
             w="100" 
