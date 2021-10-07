@@ -4,6 +4,7 @@ import Home from './components/home-components/Home';
 import Navbar from './components/Navbar';
 import GetStarted from './components/GetStarted';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Mechanics from './components/mechanics-components/Mechanics';
 
 function App() {
   return (
@@ -24,6 +25,10 @@ function App() {
 
           <Route exact path="/GetStarted">
             <GetStarted />
+          </Route>
+
+          <Route exact path="/Mechanics">
+            <Mechanics />
           </Route>
         </Switch>
 

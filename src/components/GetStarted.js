@@ -4,12 +4,17 @@ import MechanicsImg from '../images/get-started/mechanics.png';
 import WavesImg from '../images/get-started/waves.png';
 import ElectricityImg from '../images/get-started/electricity.png';
 import FluidsImg from '../images/get-started/fluids.png';
-import { ChevronRightIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon } from '@chakra-ui/icons';
+import { useHistory } from 'react-router';
 
 const GetStarted = () => {
     const handleClick = () => {
         alert('Not available yet. Coming soon!');
     }
+
+    const history = useHistory();
+    const handleClickMechanics = () => history.push('/Mechanics');
+
     return (
         <Flex
             flexDir="column"
@@ -31,7 +36,7 @@ const GetStarted = () => {
                 justifyContent="space-between"
                 mt="3.5rem"
             >
-                <Flex><Image src={MechanicsImg}/></Flex>
+                <Flex><Image onClick={handleClickMechanics} src={MechanicsImg}/></Flex>
                 <Flex><Image src={FluidsImg}/></Flex>
                 <Flex><Image src={ElectricityImg}/></Flex>
                 <Flex><Image src={WavesImg}/></Flex>
