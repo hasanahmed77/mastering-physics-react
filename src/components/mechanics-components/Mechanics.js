@@ -26,7 +26,7 @@ const Mechanics = () => {
                     <Text>ut labore et dolore magna aliqua. Ut enim ad minim veniam.ut labore et dolore magna aliqua. Ut enim ad minim veniam.ut labore et dolore magna aliqua. </Text>
                 </Flex>
                 <Flex>
-                    <Link>
+                    <Link as={ReachLink} to="/MechanicsCourses">
                         <Image src={MechanicsImg}/>
                     </Link>
                 </Flex>

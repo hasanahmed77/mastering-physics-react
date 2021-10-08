@@ -42,7 +42,7 @@ const Navbar = () => {
                     <Text ml="2rem">Email</Text>
                 </Link>
                 <Link _hover={{ textDecor:"none"}}>
-                    <Button ml="2rem" size="lg" fontWeight="medium">Sign up</Button>
+                    <Button  ml="2rem" size="lg" fontWeight="medium">Sign up</Button>
                 </Link>
             </Flex>
         </Flex>

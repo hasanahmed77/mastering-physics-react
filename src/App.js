@@ -5,6 +5,8 @@ import Navbar from './components/Navbar';
 import GetStarted from './components/GetStarted';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Mechanics from './components/mechanics-components/Mechanics';
+import MechanicsCourse  from './components/mechanics-components/MechanicsCourse'
+import RateOfMovement from './components/mechanics-components/RateOfMovement';
 
 function App() {
   return (
@@ -30,6 +32,15 @@ function App() {
           <Route exact path="/Mechanics">
             <Mechanics />
           </Route>
+
+          <Route exact path="/MechanicsCourses">
+            <MechanicsCourse />
+          </Route>
+
+          <Route exact path="/RateOfMovement">
+            <RateOfMovement/>
+          </Route>
+
         </Switch>
 
       </Flex>
